@@ -47,6 +47,38 @@ $(document).ready(function () {
 
     }
 
+    var facture = $('.input-facture'),
+    size = $('.input-1'),
+    light = $('.input-3'),
+    price = $('.cost_num'),
+    summ = (+facture.val() * ((+size.val() * basePrice) + (+light.val() * baseLight))),
+    basePrice = 440,
+    baseLight = 260;
+    
+    
+    facture.change(function(event) {
+			summ = (+facture.val() * ( (+size.val() * basePrice) + (+light.val() * baseLight) ));
+		});
+    size.change(function(event) {
+			summ = (+facture.val() * ( (+size.val() * basePrice) + (+light.val() * baseLight) ));
+		});
+    price.change(function(event) {
+			summ = (+facture.val() * ( (+size.val() * basePrice) + (+light.val() * baseLight) ));
+		});
 
+    $('.final-cost').on('click', function() {
+      price.text(summ);
+    });
+
+  
+
+    $('.design-buttons-photo').click(function(){
+      $('.design-photo').addClass('photo-active');
+      $('.design-color').removeClass('photo-active');
+    });
+    $('.design-buttons-color').click(function(){
+      $('.design-photo').removeClass('photo-active');
+      $('.design-color').addClass('photo-active');
+    });
 
 });
