@@ -237,7 +237,7 @@
     <button class="design-buttons-color">Примерка цветных полотен</button>
     <button class="design-buttons-photo">Примерка фотопечати</button>
   </div>
-  <div class="design-photo photo-active">
+  <div class="design-photo ">
       <div class="design-photo-strong">Выберите изображение для примерки</div>
       <div class="design-photo-images">
         <a href="javascript:l_image('img/photo/1.png')"><img  src="img/photo-min/1.jpg" alt=""></a>
@@ -258,6 +258,51 @@
       </div>
       <script type="text/javascript">function l_image (a) {document.example_img.src = a;}</script>
   </div>
+  <div class="design-color photo-active">
+    <div class="design-color-top">
+      <div>
+        <div class="design-color-top-title">Выберите цвет потолка</div>
+        <form><input type="text" id="color" name="color" value="#123456" /></form>
+        <div id="colorpicker"></div>
+      </div>
+      <div>
+        <div class="design-color-top-title">Выберите цвет стен</div>
+          <form><input type="text" id="color2" name="color" value="#123456" /></form>
+          <div id="colorpicker2"></div>
+        </div>
+    </div>
+    <div class="design-color-bot">
+        <svg id="svg_top" xmlns="//www.w3.org/2000/svg" xmlns:xlink="//www.w3.org/1999/xlink" xml:space="preserve" width="660px" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd" viewBox="0 0 42095 16614">
+          <defs>
+         <style type="text/css">
+          
+           .fil0 {fill:rgb(244, 248, 244);}
+          
+         </style>
+          </defs>
+          <g id="s0201">
+         <metadata id="CorelCorpID_0Corel-Layer1"></metadata>
+         <path class="fil0" d="M20207 15237l-20207 -4821 0 -10416 42095 0 0 15281 -7156 1333m0 0l-5449 -1769 -9283 392"></path>
+          </g>
+         </svg>
+         <svg id="svg_bot" xmlns="//www.w3.org/2000/svg" xmlns:xlink="//www.w3.org/1999/xlink" xml:space="preserve" width="660px" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd" viewBox="0 0 42095 16614">
+          <defs>
+         <style type="text/css">
+          
+           .fil1 {fill:rgb(0, 247, 0);}
+          
+         </style>
+          </defs>
+          <g id="s0202">
+         <metadata id="CorelCorpID_0Corel-Layer2"></metadata>
+         <path class="fil1" d="M7156 0l5449 1769 16523 3818 5797 1529m0 0l7170 -1338 0 10836 -42095 0 0 -15281 7156 -1333"></path>
+          </g>
+         </svg>
+        <img src="img/primerka.png" alt="">
+
+    </div>
+  </div>
+    
 
 </section>
 <section class="features">

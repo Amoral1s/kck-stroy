@@ -70,7 +70,20 @@ $(document).ready(function () {
       price.text(summ);
     });
 
-  
+    
+  function setBottom (color){
+	  $('.fil1').css('fill', color);
+	}
+
+	function setTop(color){
+	  $('.fil0').css('fill', color);
+	}
+
+	$('#colorpicker').farbtastic(setBottom);
+	$('#colorpicker2').farbtastic(setTop);
+
+	
+    
 
     $('.design-buttons-photo').click(function(){
       $('.design-photo').addClass('photo-active');
@@ -80,5 +93,6 @@ $(document).ready(function () {
       $('.design-photo').removeClass('photo-active');
       $('.design-color').addClass('photo-active');
     });
+    
 
 });
